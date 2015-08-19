@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<projectProfile type="default" version="1.10">
+  <projectDirectory>
+    <projectProfileFile filesystemName=".zfproject.xml"/>
+    <applicationDirectory classNamePrefix="Application_">
+      <apisDirectory enabled="false"/>
+      <configsDirectory>
+        <applicationConfigFile type="ini"/>
+      </configsDirectory>
+      <controllersDirectory>
+        <controllerFile controllerName="Index">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+        <controllerFile controllerName="Error"/>
+        <controllerFile controllerName="Users">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+      </controllersDirectory>
+      <formsDirectory enabled="false">
+        <formFile formName="UsersRegister"/>
+      </formsDirectory>
+      <layoutsDirectory enabled="false"/>
+      <modelsDirectory>
+        <dbTableDirectory>
+          <dbTableFile dbTableName="Users"/>
+          <dbTableFile dbTableName="Tournaments"/>
+          <dbTableFile dbTableName="TournamentPlayers"/>
+          <dbTableFile dbTableName="PropertyOptions"/>
+          <dbTableFile dbTableName="PropertyLists"/>
+          <dbTableFile dbTableName="PropertyCategories"/>
+          <dbTableFile dbTableName="Players"/>
+          <dbTableFile dbTableName="PlayerStreams"/>
+          <dbTableFile dbTableName="PlayerGameInfos"/>
+          <dbTableFile dbTableName="News"/>
+          <dbTableFile dbTableName="NewsGames"/>
+          <dbTableFile dbTableName="Games"/>
+          <dbTableFile dbTableName="Events"/>
+          <dbTableFile dbTableName="EventTournaments"/>
+          <dbTableFile dbTableName="EventGames"/>
+          <dbTableFile dbTableName="EventDates"/>
+        </dbTableDirectory>
+        <modelFile modelName="UsersMapper"/>
+        <modelFile modelName="TournamentsMapper"/>
+        <modelFile modelName="TournamentPlayersMapper"/>
+        <modelFile modelName="PropertyOptionsMapper"/>
+        <modelFile modelName="PropertyListsMapper"/>
+        <modelFile modelName="PropertyCategoriesMapper"/>
+        <modelFile modelName="PlayersMapper"/>
+        <modelFile modelName="PlayerStreamsMapper"/>
+        <modelFile modelName="PlayerGameInfosMapper"/>
+        <modelFile modelName="NewsGamesMapper"/>
+        <modelFile modelName="NewsMapper"/>
+        <modelFile modelName="GamesMapper"/>
+        <modelFile modelName="EventsMapper"/>
+        <modelFile modelName="EventTournamentsMapper"/>
+        <modelFile modelName="EventGamesMapper"/>
+        <modelFile modelName="EventDatesMapper"/>
+        <modelFile modelName="Users"/>
+      </modelsDirectory>
+      <modulesDirectory enabled="false"/>
+      <viewsDirectory>
+        <viewScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Error">
+            <viewScriptFile forActionName="error"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Users">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+        </viewScriptsDirectory>
+        <viewHelpersDirectory/>
+        <viewFiltersDirectory enabled="false"/>
+      </viewsDirectory>
+      <bootstrapFile filesystemName="Bootstrap.php"/>
+    </applicationDirectory>
+    <dataDirectory enabled="false">
+      <cacheDirectory enabled="false"/>
+      <searchIndexesDirectory enabled="false"/>
+      <localesDirectory enabled="false"/>
+      <logsDirectory enabled="false"/>
+      <sessionsDirectory enabled="false"/>
+      <uploadsDirectory enabled="false"/>
+    </dataDirectory>
+    <docsDirectory>
+      <file filesystemName="README.txt"/>
+    </docsDirectory>
+    <libraryDirectory>
+      <zfStandardLibraryDirectory enabled="false"/>
+    </libraryDirectory>
+    <publicDirectory>
+      <publicStylesheetsDirectory enabled="false"/>
+      <publicScriptsDirectory enabled="false"/>
+      <publicImagesDirectory enabled="false"/>
+      <publicIndexFile filesystemName="index.php"/>
+      <htaccessFile filesystemName=".htaccess"/>
+    </publicDirectory>
+    <projectProvidersDirectory enabled="false"/>
+    <temporaryDirectory enabled="false"/>
+    <testsDirectory>
+      <testPHPUnitConfigFile filesystemName="phpunit.xml"/>
+      <testApplicationDirectory>
+        <testApplicationBootstrapFile filesystemName="bootstrap.php"/>
+        <testApplicationControllerDirectory>
+          <testApplicationControllerFile filesystemName="UsersControllerTest.php"/>
+        </testApplicationControllerDirectory>
+      </testApplicationDirectory>
+      <testLibraryDirectory>
+        <testLibraryBootstrapFile filesystemName="bootstrap.php"/>
+      </testLibraryDirectory>
+    </testsDirectory>
+  </projectDirectory>
+</projectProfile>

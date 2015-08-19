@@ -1,0 +1,58 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Utah eSports</title>
+        <?php echo $this->headLink()->appendStylesheet('/utahesports/css/global.css') ?>
+    </head>
+    <body>
+        <div id="container">
+            <div class="header">
+                <div id="mainLogo">
+                    <a href="<?php echo $this->baseUrl(); ?>"><img src="<?php echo $this->baseUrl(); ?>/images/utahplayersgull.jpg" alt="gull" /></a>
+                </div>
+                <div id="mainHeader">
+                    Utah eSports Gaming Community <br /><br />
+                    <div id="smallURL">http://www.utahesports.com/</div>
+                    <div id="externalLinks">
+                        <div class="externalLinkIcon"><img src="<?php echo $this->baseUrl(); ?>/images/utahsc2tiny.jpg" alt="SC2 Utah" /></div>
+                        <div class="externalLinkIcon"><img src="<?php echo $this->baseUrl(); ?>/images/utahloltiny.jpg" alt="LoL Utah" /></div>
+                        <div class="externalLinkIcon"><img src="<?php echo $this->baseUrl(); ?>/images/utahd3tiny.jpg" alt="D3 Utah" /></div>
+                        <div class="externalLinkIcon"><img src="<?php echo $this->baseUrl(); ?>/images/utahbf3tiny.jpg" alt="BF3 Utah" /></div>
+                        <div class="externalLinkIcon"><img src="<?php echo $this->baseUrl(); ?>/images/utahetctiny.jpg" alt="Something Utah" /></div>
+                    </div>
+                </div>
+                <div id="authBar">
+                    <div id="loginLinks"><?php echo $this->profileLink() ?></div>
+                </div>
+                <div id="navBar">
+                    <a href="<?php echo $this->baseUrl(); ?>"><div class="navLink">Home</div></a>
+                    <div class="navLink">Forum</div>
+                    <div class="navLink">Events</div>
+                    <div class="navLink">Streams</div>
+                    <a href="<?php echo $this->baseUrl(); ?>/users"><div class="navLink">Players</div></a>
+                </div>
+            </div>
+            <div id="content">
+                <div id="leftBar">Stuff here</div>
+                <div id="centerContent">
+                    <?php echo $this->layout()->content ?>
+                </div>
+                <div id="rightBar">And stuff here</div>
+            </div>
+            <div id="footer">
+                <hr />
+                <i>
+                    <center>
+                        <b>
+                            &copy; 2012 Utah eSports Gaming Community
+                        </b>
+                    </center>
+                </i>
+            </div>
+
+        </div>
+
+    </body>
+</html>

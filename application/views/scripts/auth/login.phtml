@@ -1,0 +1,9 @@
+<?php
+
+if ($this->loginError === -1) {
+    echo "<span class='error'>Username not found</span>";
+} elseif ($this->loginError === -3) {
+    echo "<span class='error'>Password incorrect</span>";
+}
+$this->loginForm->setAction($this->url());
+echo $this->loginForm;

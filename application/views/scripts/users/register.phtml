@@ -1,0 +1,15 @@
+
+<form class="large marginAuto" action="<?php echo $this->baseUrl() ?>/users/register" method="POST">
+    <div class="formElement large"><label class="medium floatLeft">Username* </label><input type="text" name="user[username]" id="username" value /></div>
+    <div class="formElement large"><label class="medium floatLeft">Password* </label><input type="password" name="user[password]" id="password" value /></div>
+    <div class="formElement large"><label class="medium floatLeft">Repeat Password* </label><input type="password" name="passwordrepeat" id="passrepeat" value /></div>
+    <div class="formElement large"><label class="medium floatLeft">Email* </label><input type="text" name="player[email]" id="email" value /></div>
+    <div class="formElement large"><input type="hidden" name="player[showemail]" value="0" /><label class="medium floatLeft">Show Email? </label><input type="checkbox" name="player[showemail]" value="1" /></div>
+    <div class="formElement large"><label class="medium floatLeft">First Name* </label><input type="text" name="player[firstname]" id="firstname" value /></div>
+    <div class="formElement large"><label class="medium floatLeft">Last Name* </label><input type="text" name="player[lastname]" id="lastname" value /></div>
+    <div class="formElement large"><label class="medium floatLeft">Security Question* </label><input type="text" name="user[securityquestion]" id="secquestion" value /></div>
+    <div class="formElement large"><label class="medium floatLeft">Security Answer* </label><input type="text" name="user[securityanswer]" id="secanswer" value /></div>
+    <div class="formElement large"><label class="medium floatLeft">Other Contact Info: </label><textarea name="player[contactinfo]" id="contactinfo" rows="8" cols="40"></textarea></div>
+    <div class="formElement large center"><input class="medium" type="submit" name="submit" id="submit" value="Register" /></div>
+    <?php echo $this->userform->getElement('csrf'); ?>
+</form>

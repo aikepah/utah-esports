@@ -1,0 +1,36 @@
+<div id="admin-users">
+    <h3>User Admin</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Modified</th>
+            <th>Created</th>
+            <th>Ban</th>
+        </tr>
+        <?php
+        foreach ($this->users as $user):
+            ?>
+            <tr>
+                <td><?php echo $this->escape($user->getId()); ?></td>
+                <td><?php echo $this->escape($user->getUsername()); ?></td>
+                <td>
+                    <select id="user[<?php echo $this->escape($user->getId()); ?>][role]">
+                        <!--   @TODO: Function to pull in list of roles and add "selected='selected'" to current role      -->
+                        <option value="<?php echo $this->escape($user->getRoleId()); ?>"><?php echo $this->escape($user->getRole()); ?></option>
+                    </select>
+                </td>
+                <td><?php echo $this->escape($user->getModifiedDate()); ?></td>
+                <td><?php echo $this->escape($user->getCreatedDate()); ?></td>
+                <td><?php
+        if ($user->getIsBanned() == 1) {
+            echo '<a href="' . $this->url(array('controller' => 'users', 'action' => 'unban'), null, FALSE) . '">Unban</a>';
+        } else {
+            echo '<a href="' . $this->url(array('controller' => 'users', 'action' => 'ban'), null, FALSE) . '">Ban</a>';
+        }
+            ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+</div>

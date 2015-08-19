@@ -1,0 +1,150 @@
+a:4:{s:4:"root";s:16:"less/global.less";s:8:"compiled";s:2941:"#container {
+  width:1136px !important;
+  padding:20px;
+  margin:auto;
+}
+#container h1.header_tag {
+  margin-bottom:0px;
+  text-align:center;
+}
+#container .header {
+  position:relative;
+  float:left;
+  margin-bottom:5px;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  width:900px;
+  margin-left:118px;
+}
+#container .header #mainLogo {
+  position:relative;
+  float:left;
+  padding-left:10px;
+}
+#container .header #mainLogo img {
+  width:150px;
+  height:200px;
+}
+#container .header #mainHeader {
+  position:relative;
+  float:left;
+  width:700px;
+  padding:20px 10px 10px 5px;
+  text-align:center;
+  font-style:italic;
+}
+#container .header #mainHeader #smallURL {
+  font-weight:bolder;
+  font-size:small;
+}
+#container .header #mainHeader #externalLinks {
+  width:575px;
+  position:relative;
+  margin:auto;
+}
+#container .header #mainHeader #externalLinks .externalLinkIcon {
+  padding:20px;
+  position:relative;
+  float:left;
+}
+#container .header #authBar {
+  width:900px;
+  position:relative;
+  float:left;
+}
+#container .header #authBar .loginInfo {
+  width:225px;
+  float:left;
+  position:relative;
+  padding:0px 5px;
+}
+#container .header #authBar #loginButton {
+  float:left;
+  position:relative;
+}
+#container .header #authBar #loginLinks {
+  float:left;
+  padding-top:4px;
+  margin-left:10px;
+}
+#container .header #navBar {
+  width:860px;
+  position:relative;
+  float:left;
+  padding:10px 20px;
+}
+#container .header #navBar .navLink {
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  width:150px;
+  position:relative;
+  float:left;
+  margin:0px 5px;
+  text-align:center;
+  border:1px dotted;
+}
+#container .header h3 {
+  font-size:16px !important;
+  margin-top:0px;
+  text-align:center;
+}
+#container #content {
+  width:1136px;
+  position:relative;
+  float:left;
+}
+#container #content #leftBar {
+  width:150px;
+  position:relative;
+  float:left;
+  border:1px dotted;
+  margin:0px 10px;
+  padding:5px;
+}
+#container #content #centerContent {
+  width:736px;
+  position:relative;
+  float:left;
+  border:1px dotted;
+  margin:0px 10px;
+  padding:5px;
+}
+#container #content #rightBar {
+  width:150px;
+  position:relative;
+  float:left;
+  border:1px dotted;
+  margin:0px 10px;
+  padding:5px;
+}
+#container #footer {
+  position:relative;
+  float:left;
+  margin-bottom:5px;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  width:900px;
+  margin-left:118px;
+}
+#container input, #container textarea {
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+#container .medium { width:179px; }
+#container .large { width:343px; }
+#container .xLarge { width:418px; }
+#container .marginAuto { margin:auto; }
+#container .floatLeft { float:left; }
+#container .floatRight { float:right; }
+#container .center { text-align:center; }
+#container .error { color:red; }
+.userInfo th {
+  width:200px;
+  text-align:right;
+}
+.userInfo td { padding-left:15px; }
+";s:5:"files";a:2:{s:46:"C:\web\php\utahesports\public\less\global.less";i:1336054880;s:45:"C:\web\php\utahesports\public\less\users.less";i:1336055149;}s:7:"updated";i:1336055150;}

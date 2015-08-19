@@ -1,0 +1,188 @@
+@page_width: 1136px;
+@page_padding: 20px;
+@internal_width: @page_width - @page_padding;
+@header_width: 900px;
+
+// this is a single-line comment
+.rounded(@radius: 3px) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+/* 
+ * This is a
+ * multi-line comment.
+ */
+#container {
+    width: @page_width !important;
+    padding: @page_padding;
+    margin: auto;
+
+    h1.header_tag {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .header {
+        position: relative;
+        float: left;
+        margin-bottom: 5px;
+        .rounded(5px);
+        width: @header_width;
+        margin-left: (@page_width - @header_width)/2;
+        #mainLogo {
+            position: relative;
+            float: left;
+            padding-left: 10px;
+            img {
+                width: 150px;
+                height: 200px;
+            }
+        }
+
+        #mainHeader {
+            position: relative;
+            float: left;
+            width: @header_width - 200px;
+            padding: 20px 10px 10px 5px;
+            text-align: center;
+            font-style: italic;
+            #smallURL {
+                font-weight: bolder;
+                font-size: small;
+            }
+            #externalLinks {
+                width: 575px;
+                position: relative;
+                margin: auto;
+                .externalLinkIcon {
+                    padding: 20px;
+                    position: relative;
+                    float: left;
+                }
+            }
+        }
+        #authBar {
+            width: @header_width;
+            position: relative;
+            float: left;
+            .loginInfo {
+                width: 225px;
+                float: left;
+                position: relative;
+                padding: 0px 5px;
+            }
+            #loginButton {
+                float: left;
+                position: relative;
+            }
+            #loginLinks {
+                float: left;
+                padding-top: 4px;
+                margin-left: 10px;
+            }
+        }
+        #navBar {
+            width: @header_width - 40;
+            position: relative;
+            float: left;
+            padding: 10px 20px;
+            .navLink {
+                .rounded;
+                width: 150px;
+                position: relative;
+                float: left;
+                margin: 0px 5px;
+                text-align: center;
+                border: 1px dotted;
+            }
+        }
+
+        h3 {
+            font-size: 16px !important;
+            margin-top: 0px;
+            text-align: center;
+        }
+    }
+    #content {
+        width: @page_width;
+        position: relative;
+        float: left;
+        #leftBar {
+            width: 150px;
+            position: relative;
+            float: left;
+            border: 1px dotted;
+            margin: 0px 10px;
+            padding: 5px;
+        }
+        #centerContent {
+            width: @page_width - 400px;
+            position: relative;
+            float: left;
+            border: 1px dotted;
+            margin: 0px 10px;
+            padding: 5px;
+        }
+        #rightBar {
+            width: 150px;
+            position: relative;
+            float: left;
+            border: 1px dotted;
+            margin: 0px 10px;
+            padding: 5px;
+        }
+    }
+    #footer {
+        position: relative;
+        float: left;
+        margin-bottom: 5px;
+        .rounded(5px);
+        width: @header_width;
+        margin-left: (@page_width - @header_width)/2;
+    }
+
+    input, textarea {
+        .rounded(5px);
+    }
+
+    .xSmall {
+
+    }
+
+    .small {
+
+    }
+
+    .medium {
+        width: (@page_width -400px)/4 - 5px;
+    }
+
+    .xMedium {
+
+    }
+    
+    .large {
+        width: (@page_width - 400px)/2 - 25px;
+    }
+    .xLarge {
+        width: (@page_width - 250px)/2 - 25px;
+    }
+    .marginAuto {
+        margin: auto;
+    }
+    .floatLeft {
+        float: left;
+    }
+    .floatRight {
+        float: right;
+    }
+    .center {
+        text-align: center;
+    }
+    .error {
+        color: red;
+    }
+}
+@import "users.less";

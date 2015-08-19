@@ -1,0 +1,27 @@
+<?php
+if ($this->noUser) {
+    echo "<h2>Sorry, no user found actually this should be by username, not id. Oops.</h2>";
+} else {
+    ?>
+    <table class="userInfo">
+        <tr>
+            <th>Username:</th>
+            <td><?php echo $this->escape($this->userInfo->getUsername()); ?></td>
+        </tr>
+        <tr>
+            <th>Name:</th>
+            <td><?php echo $this->escape($this->playerInfo->getFirstName() . ' ' . $this->playerInfo->getLastName()) ?></td>
+        </tr>
+        <?php if ($this->playerInfo->getShowEmail() == '1'): ?>
+        <tr>
+            <th>Email:</th>
+            <td><?php echo $this->escape($this->playerInfo->getEmail()); ?></td>
+        </tr>
+        <?php endif; ?>
+        <tr>
+            <th>Other Contact Info:</th>
+            <td><?php echo $this->escape($this->playerInfo->getContactInfo()); ?></td>
+        </tr>
+    </table>
+
+<?php } ?>
